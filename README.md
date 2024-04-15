@@ -20,3 +20,4 @@ Se non viene specificato nessun filtro, visualizzare come in precedenza tutti gl
 2 - utilizzare un ciclo "foreach" con chiave gli array elementi dell'array multidimensionale
 3 - creare una card in cui richiamare i valori dei singoli array con la dicitura $array['chiave']
 4 - Perdere mezz'ora per l'utilizzo dell'apice americano al posto dell'apostrofo, non riuscendo a localizzare il problema
+5 - aggiunta immagini tramite array key e layout bootstrap

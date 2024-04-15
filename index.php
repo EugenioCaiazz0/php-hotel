@@ -1,37 +1,42 @@
 <?php 
     $hotels = [
         [
-            'nome' => 'Hotel Belvedere',
+            'nome' => 'Habbo Hotel',
             'descrizione' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse voluptas, quibusdam ipsam pariatur laboriosam! Minus nemo esse ex saepe repudiandae quia, magni quo expedita?',
-            'parcheggio' => `si`,
+            'parcheggio' => 'si',
+            'img' => 'assets/habbo.jpeg',
             'voto' => 4,
             'DDC' => 10.4 /* distanza dal centro */
         ],
         [
-            'nome' => 'Hotel Futuro',
+            'nome' => 'Heavenhold',
             'descrizione' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse voluptas, quibusdam ipsam pariatur laboriosam! Minus nemo esse ex saepe repudiandae quia, magni quo expedita?',
-            'parcheggio' => `si`,
+            'parcheggio' => 'si',
+            'img' => 'assets/Heavenhold.webp',
             'voto' => 2,
             'DDC' => 2
         ],
         [
-            'nome' => 'Hotel Rivamare',
+            'nome' => 'Jabba Palace',
             'descrizione' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse voluptas, quibusdam ipsam pariatur laboriosam! Minus nemo esse ex saepe repudiandae quia, magni quo expedita?',
-            'parcheggio' => `no`,
+            'parcheggio' => 'no',
+            'img' => 'assets/Jabbas_Palace.webp',
             'voto' => 1,
             'DDC' => 1
         ],
         [
-            'nome' => 'Hotel Bellavista',
+            'nome' => 'Vault Tec Fallout Shelter',
             'descrizione' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse voluptas, quibusdam ipsam pariatur laboriosam! Minus nemo esse ex saepe repudiandae quia, magni quo expedita?',
-            'parcheggio' => `no`,
+            'parcheggio' => 'no',
+            'img' => 'assets/Vault.jpeg',
             'voto' => 5,
             'DDC' => 5.5
         ],
         [
-            'nome' => 'Hotel Milano',
+            'nome' => 'Monopoly Park',
             'descrizione' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto esse voluptas, quibusdam ipsam pariatur laboriosam! Minus nemo esse ex saepe repudiandae quia, magni quo expedita?',
-            'parcheggio' => `si`,
+            'parcheggio' => 'si',
+            'img' => 'assets/monopoly.jpeg',
             'voto' => 2,
             'DDC' => 50
         ],
@@ -57,8 +62,8 @@
 
 <ul>
 <?php foreach($hotels as $hotel): ?>
- <div class="card">
- <img src="..." class="card-img-top" alt="..."> 
+ <div class="card d-flex w-50 my-5 mx-auto border-primary  ">
+ <img src= "<?php echo $hotel['img']?>" class="card-img-top " alt="..."> 
   <div class="card-body">
     <h5 class="card-title"> <?php echo $hotel['nome'] ?> </h5>
     <p class="card-text"> <?php echo $hotel['descrizione'] ?> </p>
